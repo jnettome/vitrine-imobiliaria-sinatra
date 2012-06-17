@@ -1,0 +1,7 @@
+.re-listing {}
+  .re-listing > .span4 {}
+    .re-listing > .span4 > a { border:0; color:#333; }
+    .re-listing > .span4 > a:hover { text-decoration:none; }
+      .re-listing > .span4 > a > h4 { margin-top:10px; font-size:20px; }
+      .re-listing > .span4 > a > p { margin-top:5px; }
+      .re-listing > .span4 > a > h3.price { margin-top:10px; text-align:right; width:100%; }

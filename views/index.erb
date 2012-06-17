@@ -8,6 +8,7 @@
     <meta name="author" content="João Netto">
 
     <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -27,10 +28,10 @@
           <% for estate in @estates %>
           <div class="span4">
             <a href="#" class="thumbnail">
-              <img src="<%= estate.image_url %>" alt="<%= estate.name %>" width="360" height="268">
-              <h4><%= estate.name %></h4>
-              <p><%= estate.preview %></p>
-              <h3 class="price">R$ <%= estate.price %></h3>
+              <img src="<%= estate.image_url %>" alt="<%= estate.name.to_s.force_encoding("UTF-8") %>" width="360" height="268">
+              <h4><%= estate.name.to_s.force_encoding("UTF-8") %></h4>
+              <p><%= estate.preview.to_s.force_encoding("UTF-8") %></p>
+              <h3 class="price">R$ <%= estate.price.to_s.force_encoding("UTF-8") %></h3>
             </a>
           </div>
           <% end %>
@@ -40,10 +41,6 @@
           </div>
         <% end %>
       </div>
-      
-      <footer>
-        <p>&copy; joaonetto.me</p>
-      </footer>
     </div>
   </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Adicionar Imóvel | Imobiliária XYZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vitrine imobiliária de exemplo desenvolvida em Ruby com Sinatra">
+    <meta name="author" content="João Netto">
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-unit">
+        <h1>Vitrine em Rails</h1>
+        <p>Uma listagem simples de arquivos desenvolvida em Ruby com Sinatra em MVC.</p>
+      </div>
+      
+      <div class="row">
+        <div class="span12">
+          <div class="page-header">
+            <h1>Adicionar Anúncio</h1>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="span6 offset3">
+          <form class="form-horizontal" method="post" action="/add">
+            <fieldset>
+              <div class="control-group">
+                <label class="control-label" for="name">Título do Anúncio</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="name" name="name">
+                  <p class="help-block">Ex: Apartamento - Locação - 164m<sup>2</sup></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="preview">Prévia do Anúncio</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="preview" name="preview">
+                  <p class="help-block">Informações como quartos, bairro.</p>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="image_url">URL da Imagem</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" id="image_url" name="image_url">
+                  <p class="help-block">360x268px</p>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="price">Preço</label>
+                <div class="controls">
+                  <input type="text" class="input-large" id="price" name="price">
+                  <p class="help-block">Sem vírgulas, espaços ou pontos.<br/>Ex: para R$ 530.000,00, informe <strong>53000000</strong>.</p>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      
+      
+      <footer>
+        <p>&copy; joaonetto.me</p>
+      </footer>
+    </div>
+  </body>
+</html>
