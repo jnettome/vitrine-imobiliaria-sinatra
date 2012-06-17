@@ -1,8 +1,8 @@
 require 'sinatra/base'
 require 'sinatra/config_file'
 require 'sinatra/activerecord'
-require './models'
 require 'erb'
+#require File.dirname(__FILE__) + '/models/*.rb'
 
 class Imobiliaria < Sinatra::Base
   register Sinatra::ConfigFile
