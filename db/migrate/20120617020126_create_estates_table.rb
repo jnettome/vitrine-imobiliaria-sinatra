@@ -4,7 +4,7 @@ class CreateEstatesTable < ActiveRecord::Migration
       t.string :name, :null => false
       t.string :preview, :null => false
       t.string :image_url
-      t.text :details
+      t.decimal :price
       t.datetime :created_at
       t.datetime :updated_at
     end
